@@ -8,8 +8,8 @@ import { shortenAddress } from '../utils/shortenAddress';
 
 const NFTCard = ({ nft, onProfilePage }) => {
   const { nftCurrency } = useContext(NFTContext);
-  const { count } = useContext(NFTContext);
-  console.log(count);
+  // const { count } = useContext(NFTContext);
+  // console.log(count);
   return (
 
     <Link href={{ pathname: '/nft-details', query: nft }}>
@@ -23,7 +23,7 @@ const NFTCard = ({ nft, onProfilePage }) => {
             <p className="font-poppins dark:text-white text-nft-black-1 font-semibold text-xs minlg:text-lg">{nft.price}<span className="font-normal"> {nftCurrency}</span></p>
             <p className="font-poppins dark:text-white text-nft-black-1 font-semibold text-xs minlg:text-lg">{shortenAddress(onProfilePage ? nft.owner : nft.seller)}</p>
           </div>
-          <div>{count}/100</div>
+          {/* <div>{count}/100</div> */}
           <div className="mt-1 minlg:mt-3 flexBetween flex-row" />
         </div>
       </div>

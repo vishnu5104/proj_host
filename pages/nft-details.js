@@ -39,7 +39,7 @@ const PaymentBodyCmp = ({ nft, nftCurrency }) => (
 
 const AssetDetails = () => {
   const { nftCurrency, buyNft, currentAccount, isLoadingNFT } = useContext(NFTContext);
-  const count = 0;
+  // const count = 0;
 
   const [nft, setNft] = useState({ image: '', itemId: '', name: '', owner: '', price: '', seller: '' });
   const [paymentModal, setPaymentModal] = useState(false);
