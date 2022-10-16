@@ -116,7 +116,7 @@ const AssetDetails = () => {
             : currentAccount === nft.owner.toLowerCase()
               ? (
                 <Button
-                  btnName="List on Marketplace"
+                  btnName="Transfer The Ownership"
                   btnType="primary"
                   classStyles="mr-5 sm:mr-0 sm:mb-5 rounded-xl"
                   handleClick={() => router.push(`/resell-nft?id=${nft.tokenId}&tokenURI=${nft.tokenURI}`)}
@@ -124,7 +124,7 @@ const AssetDetails = () => {
               )
               : (
                 <Button
-                  btnName={`Buy for ${nft.price} ${nftCurrency}`}
+                  btnName={`Transfer ownership for ${nft.price} ${nftCurrency}`}
                   btnType="primary"
                   classStyles="mr-5 sm:mr-0 sm:mb-5 rounded-xl"
                   handleClick={() => setPaymentModal(true)}

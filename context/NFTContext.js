@@ -122,7 +122,7 @@ export const NFTProvider = ({ children }) => {
   };
   // for home page
   const fetchNFTs = async () => {
-    const provider = new ethers.providers.JsonRpcProvider();
+    const provider = new ethers.providers.JsonRpcProvider("https://polygon-mumbai.g.alchemy.com/v2/gQqiYgK8siAdI0G4p-oaL_NmK1I8Oytf");
     // to fetch contracts -> fetch all the nfts not only for a specific person
     const contract = fetchContract(provider);
 

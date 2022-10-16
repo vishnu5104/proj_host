@@ -1,11 +1,11 @@
 const hre = require('hardhat');
 
 async function main() {
-  const NFTMarketplace = await hre.ethers.getContractFactory('NFTMarketplace');
-  const nftMarketplace = await NFTMarketplace.deploy();
-  await nftMarketplace.deployed();
+  const OwnershipTransfer = await hre.ethers.getContractFactory('OwnershipTransfer');
+  const ownershipTransfer = await OwnershipTransfer.deploy();
+  await ownershipTransfer.deployed();
 
-  console.log('Market deployed to:', nftMarketplace.address);
+  console.log('Market deployed to:', ownershipTransfer.address);
 }
 
 main()
