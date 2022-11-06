@@ -1,6 +1,7 @@
 const fs = require('fs');
 // eslint-disable-next-line import/no-extraneous-dependencies
 require('@nomiclabs/hardhat-waffle');
+require("@nomiclabs/hardhat-etherscan");
 
 const PRIVATE_KEY = fs.readFileSync('.secret').toString().trim();
 
